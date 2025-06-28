@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Site Under Maintenance</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: sans-serif;
+      background: #f0f4f8;
+      color: #333;
+      text-align: center;
+    }
+    main {
+      padding: 20px;
+      max-width: 400px;
+    }
+    svg {
+      width: 150px;
+      height: 150px;
+      margin-bottom: 20px;
+    }
+    h1 {
+      margin: 0 0 10px;
+      font-size: 1.8rem;
+    }
+    p {
+      margin: 0 0 20px;
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+    a.btn {
+      display: inline-block;
+      background: #007BFF;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 4px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+    a.btn:hover {
+      background: #0056b3;
+    }
+    @media (max-width: 480px) {
+      h1 { font-size: 1.5rem; }
+      svg { width: 120px; height: 120px; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <!-- Gear SVG animation -->
+    <svg viewBox="0 0 100 100">
+      <g transform="translate(50,50)">
+        <circle r="30" fill="#007BFF" opacity="0.1"/>
+        <path d="M-30,0 L-20,-10 L-20,10 Z M30,0 L20,-10 L20,10 Z M0,-30 L-10,-20 L10,-20 Z M0,30 L-10,20 L10,20 Z"
+              fill="#007BFF"/>
+        <animateTransform attributeName="transform"
+                          type="rotate"
+                          from="0"
+                          to="360"
+                          dur="4s"
+                          repeatCount="indefinite"/>
+      </g>
+    </svg>
+
+    <h1>We'll Be Back Soon</h1>
+    <p>Sorry for the inconvenience — we're doing some maintenance. We'll be back online shortly!</p>
+    <a href="mailto:support@example.com" class="btn">Contact Support</a>
+  </main>
+</body>
+</html>
